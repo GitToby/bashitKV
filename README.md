@@ -1,25 +1,25 @@
 # bashitKV - probably the smallest database in the world 🚀
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+![Size in bytes](https://img.shields.io/github/size/gittoby/bashitKV/bashitKV.sh)
 [![Made with Bash](https://img.shields.io/badge/Made%20with-Bash-1f425f.svg)](https://www.gnu.org/software/bash/)
 
 > The minimalist's key-value store. Because sometimes, less is more. Way more.
 
-Out of frustration with overengineered "modern tools", we present a dead simple local* KV database that might even be ACID compliant (in your face mongoDB 😉). 4 lines of code is all you need to be ready to store your wildest dreams, and that includes 33% more code than is really needed!
+Out of frustration with overengineered "modern tools", we present a dead simple local\* KV database that might even be ACID compliant (in your face mongoDB 😉). 4 lines of code is all you need to be ready to store your wildest dreams, and that includes 33% more code than is really needed!
 
-_*optionally distributed, see below..._
+_\*optionally distributed, see below..._
 
 ## 🚀 Quick Start
 
 ```bash
-curl <github repo raw> | source
+curl https://raw.githubusercontent.com/GitToby/bashitKV/refs/heads/main/bashitKV.sh | source
 ```
 
 or install in your terminal:
 
-```bash 
-curl <github repo raw> > ~/bashitKV.sh && echo "source ~/bashitKV.sh" >> ~/.bashrc
+```bash
+curl https://raw.githubusercontent.com/GitToby/bashitKV/refs/heads/main/bashitKV.sh > ~/bashitKV.sh && echo "source ~/bashitKV.sh" >> ~/.bashrc
 ```
 
 ## 💫 Features
@@ -64,7 +64,7 @@ bashit_delete mykey
 bashitKV leverages your OS's built-in permission system. Want to protect your keys?
 
 ```bash
-chmod 006 mykey
+chmod 700 mykey
 ```
 
 ## 💾 Backups
@@ -91,8 +91,7 @@ PRs are welcome! Whether it's fixing a typo or adding that one feature that make
 
 ## ⚠️ Disclaimer
 
-This is an educational piece on how simple databases can be. With 4 lines of code we can create a persistent KV store and explain how simple datastores actually work. I initially made this as a [joke blog post](https://tobydevlin.com/blog/python-inline-script-metadata-format) to explain that even complex systems like postgres and mariadb are just files and processes. All you do as a software engineer is read or write or do silly sums in more and more complex ways - there is no magic.
-
+This is an educational piece on how simple databases can be. With 4 lines of code we can create a persistent KV store and explain how simple datastores actually work. I initially made this as a [joke blog post](https://tobydevlin.com/blog/database-engineers-hate-this-one-weird-trick) to explain that even complex systems like postgres and mariadb are just files and processes. All you do as a software engineer is read or write or do silly sums in more and more complex ways - there is no magic.
 
 While I wouldn't recommend it for your next unicorn startup's production environment, I'd love to hear implementation stories if you try it anyway!
 
